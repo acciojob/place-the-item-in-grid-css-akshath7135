@@ -1,21 +1,102 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Webpage</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        .latest-news-section {
+            background-color: #011e29;
+            color: white;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        
+        .latest-news-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .latest-news-section li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        
+        .latest-news-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .pictorial-news-section {
+            background-color: white;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .pictorial-news-section img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+        .news-article {
+            background-color: white;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-
 <body>
-    <div class="holder">
-    	<div class="item item-1">1</div>
-    	<div class="item item-2">2</div>
-    	<div class="item item-3">3</div>
-    	<div class="item item-4">4</div>
-   </div>
-   <script type="text/javascript" src="./script.js">
-</script>
-
+    <header class="header">
+        <h1>Daily News</h1>
+    </header>
+    
+    <div class="latest-news-section">
+        <h2>Latest News</h2>
+        <ul>
+            <li>Breaking: Major political development announced</li>
+            <li>Sports team wins championship after 10-year drought</li>
+            <li>New scientific discovery could change energy industry</li>
+        </ul>
+    </div>
+    
+    <div class="pictorial-news-section">
+        <h2>Pictorial News</h2>
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News image 1">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News image 2">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News image 3">
+        <p>Scenes from around the world this week</p>
+    </div>
+    
+    <div class="news-article">
+        <h3>Featured Story</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+    </div>
 </body>
-
 </html>
